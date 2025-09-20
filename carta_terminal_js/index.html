@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminal LoveOS</title>
+  <style>
+    body {
+      background: black;
+      color: limegreen;
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+    }
+    #terminal {
+      border: 2px solid limegreen;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      background: #111;
+      position: relative;
+    }
+    #title-bar {
+      background: #222;
+      color: white;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: grab;
+    }
+    #buttons {
+      display: flex;
+      gap: 5px;
+    }
+    .btn {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .btn.red { background: red; }
+    .btn.yellow { background: yellow; }
+    .btn.green { background: green; }
+    #terminal-content {
+      padding: 10px;
+      height: 400px;
+      overflow-y: auto;
+    }
+    #current-line {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal">
+    <div id="title-bar">
+      <span>LoveOS v2.0</span>
+      <div id="buttons">
+        <div id="minimize-btn" class="btn yellow"></div>
+        <div id="maximize-btn" class="btn green"></div>
+        <div id="close-btn" class="btn red"></div>
+      </div>
+    </div>
+    <div id="terminal-content">
+      <div id="output"></div>
+      <div id="current-line"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
