@@ -194,15 +194,16 @@ window.onload = () => {
     });
 
     minimizeBtn.addEventListener('click', () => {
-        alert("¡Ouch! No me minimices, que me da complejo.");
+        alert("Una mujer minimizando a un hombre,nada nuevo");
     });
     maximizeBtn.addEventListener('click', () => {
-        alert("¡WOW! Me siento GRANDE. Aunque en realidad no cambio de tamaño.");
+        alert("Grande ya la tengo");
     });
     closeBtn.addEventListener('click', () => {
-        alert("No puedes cerrarme... el destino nos unió. <3");
+        alert("Y si te vas para la pinga");
     });
 
     startLoading();
 };
+
                                          
